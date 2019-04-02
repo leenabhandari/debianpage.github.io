@@ -32,3 +32,8 @@ img {
 .head-back{
     background-color: gray;
 }
+
+#resultdiv{
+    text-align: center;
+    padding-bottom: 10px;
+}

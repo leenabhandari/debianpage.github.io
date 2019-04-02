@@ -26,11 +26,14 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  
     
     <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
  <div class="head-back"> <header class=" mdl-layout__header--waterfall">
@@ -103,18 +106,24 @@
                                     <!--end of col-->
                                     <div class="col-auto">
                                        <!-- <button class="btn btn-lg btn-success" type="submit">Search</button> -->
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: firebrick">
+                                         
+                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: firebrick" id="searchbtn" type="button" onclick="resfunc()">
                                         Search
                                         </button>
+                                      
                                     </div>
                                     <!--end of col-->
+                                  
                                 </div>
                             </form>
+                               
                         </div>
                         <!--end of col-->
+        
                     </div>
 </div>
         
+        <div id="resultdiv" style="display:none" ><p style="text-align: center;"><b>Result:</b><br>az vm create --image credativ:9:latest $options</p></div>
         
        <div class="table100 ver5 m-b-110">
 					<table data-vertable="ver5">

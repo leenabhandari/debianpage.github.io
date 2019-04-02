@@ -1,0 +1,313 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Debian Image Finder</title>
+  <meta name="description" content="Debian Image Finder prototype">
+  <meta name="author" content="Leena">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-red.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+    
+    <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+ <div class="head-back"> <header class=" mdl-layout__header--waterfall">
+    <!-- Top row, always visible -->
+   <div class="mdl-layout__header-row" >
+      <!-- Title -->
+     
+       <img src="img/deb.png" >
+        <span class="mdl-layout-title"> Image Finder</span>
+      <!--<div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">Search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="waterfall-exp">
+        </div>
+      </div>-->
+  </div>
+    <!-- Bottom row, not visible on scroll -->
+    <!--<div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation 
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+    </div>-->
+        </header> </div>
+  <!--<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>-->
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
+        
+        <div class="content">
+            <h1>Debian Cloud Image Finder</h1><br>
+       
+           <p> <font size="3">As Debian Cloud Images are published to our various <b>public cloud partners</b>, this table will be updated.<br><br>
+
+<b>Type a few characters</b> in the search box signifying what you’re searching for. For example if you would like to find out the Image ID for the latest release of “Trusty” Tahr to run on a “64″ bit “hvm” instance in the “us-east” region, you would search for “trusty 64 hvm us-east” or a subset thereof. As soon as you start typing into the <u>search box</u>, the list zooms-in on the entries that match your criteria.
+
+               You may search based on any of the column headers below</font></p>
+        </div>
+        
+        <div class="container">
+    <br/>
+	<div class="row justify-content-center container-pad">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search queries (e.g. i want to run debian 9 on microsoft azure)">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                       <!-- <button class="btn btn-lg btn-success" type="submit">Search</button> -->
+                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: firebrick">
+                                        Search
+                                        </button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+</div>
+        
+        
+       <div class="table100 ver5 m-b-110">
+					<table data-vertable="ver5">
+						<thead>
+							<tr class="row100 head">
+								<th class="column100 column1" data-column="column1"></th>
+								<th class="column100 column2" data-column="column2">Zone</th>
+								<th class="column100 column3" data-column="column3">Name</th>
+								<th class="column100 column4" data-column="column4">Version</th>
+								<th class="column100 column5" data-column="column5">Arch</th>
+								<th class="column100 column6" data-column="column6">Instance Type</th>
+								<th class="column100 column7" data-column="column7">Release</th>
+								<th class="column100 column8" data-column="column8">ID</th>
+							</tr>
+						</thead>
+						<tbody>
+                            
+                            <tr class="row100">
+								<td class="column100 column1" data-column="column1"><div class="form-group">
+                                  <label for="sel1">Select Cloud:</label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Select</option>
+                                    <option>Google Compute Engine</option>
+                                    <option>Oracle Cloud Platform</option>
+                                    <option>Amazon AWS</option>
+                                  </select>
+                                </div></td>
+								<td class="column100 column2" data-column="column2"><div class="form-group">
+                                  <label for="sel1">Select Zone:</label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Select</option>
+                                    <option>all</option>
+                                    <option>europe-west1</option>
+                                    <option>sa-east-1</option>
+                                    <option>northamerica-northeast1</option>
+                                      <option>ca-central-1</option>
+                                      <option>australia-southeast1</option>
+                                  </select>
+                                </div></td>
+								<td class="column100 column3" data-column="column3"><div class="form-group">
+                                  <label for="sel1">Select Name:</label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Select</option>
+                                    <option>yakkety</option>
+                                    <option>xenial</option>
+                                    <option>trusty</option>
+                                  </select>
+                                </div></td>
+								<td class="column100 column4" data-column="column4"><div class="form-group">
+                                  <label for="sel1">Select Version:</label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Select</option>
+                                    <option>16.10</option>
+                                    <option>14.04</option>
+                                    <option>16.04</option>
+                                  </select>
+                                </div></td>
+								<td class="column100 column5" data-column="column5"><div class="form-group">
+                                  <label for="sel1">Select Arch:</label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Select</option>
+                                    <option>amd64</option>
+                                   
+                                  </select>
+                                </div></td>
+								<td class="column100 column6" data-column="column6"><div class="form-group">
+                                  <label for="sel1">Select Instance:</label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Select</option>
+                                    <option>xen</option>
+                                    <option>kvm</option>
+                                    <option>hvm-instance</option>
+                                  </select>
+                                </div></td>
+								<td class="column100 column7" data-column="column7"><div class="form-group">
+                                  <label for="sel1">Select Release:</label>
+                                  <select class="form-control" id="sel1">
+                                    <option>Select</option>
+                                    <option>latest</option>
+                                    <option>20190321</option>
+                                    <option>20190325</option>
+                                  </select>
+                                </div></td>
+								<td class="column100 column8" data-column="column8"></td>
+							</tr>
+                            
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">Oracle Cloud Platform</td>
+								<td class="column100 column2" data-column="column2">all</td>
+								<td class="column100 column3" data-column="column3">yakkety</td>
+								<td class="column100 column4" data-column="column4">16.10</td>
+								<td class="column100 column5" data-column="column5">amd64</td>
+								<td class="column100 column6" data-column="column6">xen</td>
+								<td class="column100 column7" data-column="column7">latest</td>
+								<td class="column100 column8" data-column="column8">Marketplace Image 11868900</td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">Google Compute Engine</td>
+								<td class="column100 column2" data-column="column2">europe-west1</td>
+								<td class="column100 column3" data-column="column3">xenial</td>
+								<td class="column100 column4" data-column="column4">16.04</td>
+								<td class="column100 column5" data-column="column5">amd64</td>
+								<td class="column100 column6" data-column="column6">kvm</td>
+								<td class="column100 column7" data-column="column7">20190325</td>
+								<td class="column100 column8" data-column="column8">ubuntu-1604-xenial-v20190325</td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">Amazon AWS</td>
+								<td class="column100 column2" data-column="column2">sa-east-1</td>
+								<td class="column100 column3" data-column="column3">trusty</td>
+								<td class="column100 column4" data-column="column4">14.04</td>
+								<td class="column100 column5" data-column="column5">amd64</td>
+								<td class="column100 column6" data-column="column6">hvm-instance</td>
+								<td class="column100 column7" data-column="column7">20190321</td>
+								<td class="column100 column8" data-column="column8">ami-06c39f36cbb99432f</td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">Oracle Cloud Platform</td>
+								<td class="column100 column2" data-column="column2">all</td>
+								<td class="column100 column3" data-column="column3">trusty</td>
+								<td class="column100 column4" data-column="column4">14.04</td>
+								<td class="column100 column5" data-column="column5">amd64</td>
+								<td class="column100 column6" data-column="column6">xen</td>
+								<td class="column100 column7" data-column="column7">latest</td>
+								<td class="column100 column8" data-column="column8">Marketplace Image 6071138</td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">Google Compute Engine</td>
+								<td class="column100 column2" data-column="column2">northamerica-northeast1</td>
+								<td class="column100 column3" data-column="column3">xenial</td>
+								<td class="column100 column4" data-column="column4">16.04</td>
+								<td class="column100 column5" data-column="column5">amd64</td>
+								<td class="column100 column6" data-column="column6">kvm</td>
+								<td class="column100 column7" data-column="column7">20190325</td>
+								<td class="column100 column8" data-column="column8">ubuntu-1604-xenial-v20190325</td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">Amazon AWS</td>
+								<td class="column100 column2" data-column="column2">sa-east-1</td>
+								<td class="column100 column3" data-column="column3">trusty</td>
+								<td class="column100 column4" data-column="column4">14.04</td>
+								<td class="column100 column5" data-column="column5">amd64</td>
+								<td class="column100 column6" data-column="column6">hvm-instance</td>
+								<td class="column100 column7" data-column="column7">20190321</td>
+								<td class="column100 column8" data-column="column8">ami-06c39f36cbb99432f</td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">Amazon AWS</td>
+								<td class="column100 column2" data-column="column2">ca-central-1</td>
+								<td class="column100 column3" data-column="column3">trusty</td>
+								<td class="column100 column4" data-column="column4">14.04</td>
+								<td class="column100 column5" data-column="column5">amd64</td>
+								<td class="column100 column6" data-column="column6">hvm-instance</td>
+								<td class="column100 column7" data-column="column7">20190321</td>
+								<td class="column100 column8" data-column="column8">ami-092f5db445842e7a7</td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">Google Compute Engine</td>
+								<td class="column100 column2" data-column="column2">australia-southeast1</td>
+								<td class="column100 column3" data-column="column3">xenial</td>
+								<td class="column100 column4" data-column="column4">16.04</td>
+								<td class="column100 column5" data-column="column5">amd64</td>
+								<td class="column100 column6" data-column="column6">kvm</td>
+								<td class="column100 column7" data-column="column7">20190325</td>
+								<td class="column100 column8" data-column="column8">ubuntu-1604-xenial-v20190325</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+      </div>
+  </main>
+</div>
+
+    
+   
+    
+    
+    <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">debian</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>
+    
+</body>
+</html>

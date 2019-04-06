@@ -21,7 +21,7 @@ img {
 .content{
       padding-top: 30px;
   padding-right: 30px;
- 
+ background-color: #dbdbdb;
   padding-left: 30px;
 }
 
@@ -37,3 +37,4 @@ img {
     text-align: center;
     padding-bottom: 10px;
 }
+

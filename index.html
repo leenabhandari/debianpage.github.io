@@ -43,40 +43,11 @@
      
        <img src="img/deb.png" >
         <span class="mdl-layout-title"> Image Finder</span>
-      <!--<div class="mdl-layout-spacer"></div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                  mdl-textfield--floating-label mdl-textfield--align-right">
-        <label class="mdl-button mdl-js-button mdl-button--icon"
-               for="waterfall-exp">
-          <i class="material-icons">Search</i>
-        </label>
-        <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" name="sample"
-                 id="waterfall-exp">
-        </div>
-      </div>-->
+     
   </div>
-    <!-- Bottom row, not visible on scroll -->
-    <!--<div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation 
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-    </div>-->
+  
         </header> </div>
-  <!--<div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>-->
+ 
   <main class="mdl-layout__content">
     <div class="page-content"><!-- Your content goes here -->
         
@@ -93,60 +64,89 @@
         <section class="home-banner-area relative" >
 		<div class="content">
 			<div class="row fullscreen d-flex align-items-center justify-content-center">
-				<div class="banner-content col-lg-8 col-md-12">
-<!--
-					<h1 class="wow fadeIn" data-wow-duration="4s">We Rank the Best Courses <br> on the Web</h1>
-					<p class="text-white">
-						In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space
-						telescope.
-					</p>
--->
-<!--
+<!--				-->
+      <div class="container">
+        <div class="row row-custom align-items-center justify-content-center">
+          <div class="col-md-10">
+<!--            <h1 class="mb-2 text-black w-75"><span class="font-weight-bold">Largest Job</span> Site On The Net</h1>-->
+<!--            <div class="job-search">-->
 
-					<div class="input-wrap">
-						<form action="" class="form-box d-flex justify-content-between">
-							<input type="text" placeholder="Search Courses" class="form-control" name="username">
-							<button type="submit" class="btn search-btn">Search</button>
-						</form>
-					</div>
-                    
-             
+              <div class=" bg-white p-3 rounded" >
+<!--                <div class="tab-pane fade show active" id="pills-job" role="tabpanel" aria-labelledby="pills-job-tab">-->
+<!--                  <form action="#" method="post">-->
+                    <div class="row">
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <input type="text" class="form-control" placeholder="eg. how do i run via cli">
+                      </div>
+                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="select-wrap">
+                          <span class="icon-keyboard_arrow_down arrow-down"></span>
+                          <select name="" id="" class="form-control">
+                            <option value=""> Select Version </option>
+                            <option value="fulltime">Debian 9</option>
+                            <option value="fulltime">Debian 8</option>
+                            <option value="freelance">Debian 7</option>
+                            <option value="internship">Debian 6</option>
+                            
+                          </select>
+                        </div>
+                      </div>
+                        
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="select-wrap">
+                          <span class="icon-keyboard_arrow_down arrow-down"></span>
+                          <select name="" id="" class="form-control">
+                            <option value=""> Select Cloud </option>
+                            <option value="fulltime">Google Cloud Platform</option>
+                            <option value="fulltime">Oracle Cloud Plaform</option>
+                            <option value="freelance">Microsoft Azure</option>
+                            <option value="internship">Amazon AWS</option>
+                            
+                          </select>
+                        </div>
+                      </div>
+<!--
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <input type="text" class="form-control form-control-block search-input" id="autocomplete" placeholder="Location" onFocus="geolocate()">
+                      </div>
 -->
-    <br/>
-	<div class="row justify-content-center container-pad">
-                        <div class="col-12 col-md-10 col-lg-8">
-                            <form class="card card-sm">
-                                <div class="card-body row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-search h4 text-body"></i>
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col">
-                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search queries (e.g. how do i run it via the cli client)">
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col-auto">
-                                       <!-- <button class="btn btn-lg btn-success" type="submit">Search</button> -->
-                                         
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: firebrick" id="searchbtn" type="button" onclick="resfunc()">
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+<!--                        <input type="submit" class="btn btn-primary btn-block" value="Search">-->
+                          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: firebrick; width: auto" id="searchbtn" type="button" onclick="resfunc()">
                                         Search
                                         </button>
-                                      
-                                    </div>
-                                    <!--end of col-->
-                                  
-                                </div>
-                            </form>
-                               
-                        </div>
-                        <!--end of col-->
+                      </div>
+                    </div>
+<!--                  </form>-->
+<!--                </div>-->
+
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>  
+    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+    <br/>
+	<div class="row justify-content-center container-pad">
+        
+                      
         <br>
         <div>
             <br>
-        <h5 class="text-white" style="text-align: center">Popular searches</h5>
+        <h5 class="text-black" style="text-align: center">Popular searches</h5>
 
 					<div class="courses pt-20">
-						<a href="#" data-wow-duration="1s" data-wow-delay=".3s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">Run via cli client
+						<a href="#" data-wow-duration="1s" data-wow-delay=".3s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown text-black">Run via cli client
 							</a>
 						<a href="#" data-wow-duration="1s" data-wow-delay=".6s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">Run debian 8 on google compute engine</a>
 						<a href="#" data-wow-duration="1s" data-wow-delay=".9s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">run VM via the web interface</a>
@@ -161,9 +161,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="rocket-img">
-			<img src="img/rocket.png" alt="">
-		</div>
+
 	</section>
         </div>
         
@@ -171,7 +169,7 @@
         
         <div id="resultdiv" style="display:none" ><p style="text-align: center;"><b>Result:</b><br>az vm create --image credativ:9:latest $options</p></div>
         
-       <div class="table100 ver5 m-b-110">
+       <div class="table100 ver5 m-b-110 table-responsive">
 					<table data-vertable="ver5">
 						<thead>
 							<tr class="row100 head">

@@ -4,6 +4,7 @@
 [ FONT ]*/
 
 
+/*
 @font-face {
   font-family: Montserrat-Regular;
   src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
@@ -13,6 +14,7 @@
   font-family: Montserrat-Medium;
   src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
 }
+*/
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -25,7 +27,7 @@
 body, html {
 	/*height: 100%;*/
 	
-    font-family: sans-serif;
+/*    font-family: sans-serif;*/
 }
 
 /* ------------------------------------ */
@@ -158,7 +160,7 @@ th, td {
 }
 
 .table100.ver5 td {
-  font-family: Montserrat-Regular;
+/*  font-family: Montserrat-Regular;*/
   font-size: 14px;
   color: #808080;
   line-height: 1.4;
@@ -166,7 +168,7 @@ th, td {
 }
 
 .table100.ver5 th {
-  font-family: Montserrat-Medium;
+/*  font-family: Montserrat-Medium;*/
   font-size: 12px;
   color: #fff;
   line-height: 1.4;
@@ -314,7 +316,7 @@ a, a:focus, a:hover {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+/*  font-family: "Montserrat", sans-serif;*/
   color: #222222;
   line-height: 1.2em !important;
   margin-bottom: 0;
@@ -325,7 +327,7 @@ h4, h5, h6 {
 .h4, .h5, .h6 {
   margin-bottom: 0;
   margin-top: 0;
-  font-family: "Montserrat", sans-serif;
+/*  font-family: "Montserrat", sans-serif;*/
   font-weight: 600;
   color: #222222; }
 
